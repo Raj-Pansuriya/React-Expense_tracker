@@ -1,4 +1,4 @@
-import "./ExpenseDate.css"
+import "./ExpenseDate.css";
 
 export default function ExpenseDate(props) {
 
