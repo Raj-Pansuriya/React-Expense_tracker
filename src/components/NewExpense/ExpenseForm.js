@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./ExpenseForm.css";
 
-export default function ExpenseForm() {
+export default function ExpenseForm(props) {
 
 
     //You can one state instead of multiple but then,
@@ -55,7 +55,7 @@ export default function ExpenseForm() {
         setEnteredAmount("");
         setEnteredDate("");
 
-        console.log(expenseData);
+        props.onSaveExpenseData(expenseData);
     };
 
     return (
